@@ -49,7 +49,7 @@ class _CounterscreenState extends State<Counterscreen> {
                 Provider.of<CounterProvider>(context, listen: false)
                     .increment();
               },
-              child: Icon(Icons.add),
+              child: Icon(Icons.add,size: 30),
             ),
             SizedBox(
               width: 10,
@@ -60,7 +60,7 @@ class _CounterscreenState extends State<Counterscreen> {
                 Provider.of<CounterProvider>(context, listen: false)
                     .decrement();
               },
-              child: Icon(Icons.minimize),
+              child: Icon(Icons.minimize,size: 30,),
             ),
             SizedBox(
               width: 10,
@@ -70,7 +70,7 @@ class _CounterscreenState extends State<Counterscreen> {
               onPressed: () {
                 Provider.of<CounterProvider>(context, listen: false).two();
               },
-              child: Text("2X"),
+              child: Text("2X",style: TextStyle(fontSize: 20)),
             ),
             SizedBox(
               width: 10,
@@ -80,7 +80,7 @@ class _CounterscreenState extends State<Counterscreen> {
               onPressed: () {
                 Provider.of<CounterProvider>(context, listen: false).Three();
               },
-              child: Text("3X"),
+              child: Text("3X",style: TextStyle(fontSize: 20)),
             ),
             SizedBox(
               width: 10,
@@ -90,7 +90,7 @@ class _CounterscreenState extends State<Counterscreen> {
               onPressed: () {
                 Provider.of<CounterProvider>(context, listen: false).Four();
               },
-              child: Text("4X"),
+              child: Text("4X",style: TextStyle(fontSize: 20)),
             ),
           ],
         ),
